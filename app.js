@@ -15,8 +15,7 @@ const conection= require('../backend/conn/server')
 // routes
 
 const cors= require('cors');
-//app.use(cors());
-app.use(cors({credentials:true,origin:'http://localhost:5173'}));
+app.use(cors());
 app.use((req,res,next)=>{
     req.header('Access-Control-Allow-Origin',"*")
     req.header('Access-Control-Allow-Headers',"*")
@@ -30,8 +29,8 @@ app.use(bodyParser.urlencoded({extended:true}));
 // path
 const path = require('path')
 // app.use('/uploads',express.static(path.join(__dirname,"./")));
-//app.use(express.static(path.join(__dirname,"../Quora/dist")));
-//app.use(express.static(path.join(process.cwd(),"Quora",'dist',)));
+// app.use(express.static(path.join(__dirname,"../Quora/dist")));
+// //app.use(express.static(process.cwd(),"Quora",'dist'));
 
 // app.get("/",(req,res)=>{
 //     try {
