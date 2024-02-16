@@ -7,7 +7,7 @@ dotenv.config();
 const port=process.env.PORT
 
 
-const conection= require('../backend/conn/server')
+const conection= require('./conn/server')
 // cors.........................here
 
 
